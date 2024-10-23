@@ -159,7 +159,7 @@ const Signup = () => {
                 <p>
                     Already have an account?{' '}
                     <button type="button" onClick={() => navigate('/login')}>
-                        Login
+                        Sign In
                     </button>
                 </p>
             </form>
