@@ -109,7 +109,7 @@ button:hover {
 
 /* Error and Success Message Styling */
 .error {
-  color: blue;
+  color: red;
   font-size: 0.9em;
   margin: 10px 0;
 }
