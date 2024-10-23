@@ -10,5 +10,5 @@ phases:
       - npm run build  
 artifacts:
   files:
-    - '*/'
+    - '**/*'
   base-directory: frontend/auth-app/build #test
