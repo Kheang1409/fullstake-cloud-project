@@ -7,8 +7,14 @@ phases:
       - npm install
   build:
     commands:
-      - npm run build  
+      - npm run build
+  post_build:
+    commands:
+      - echo "Deploying to S3"
+      - aws s3 sync build/ s3://cloud-kinfra-reactappbucket-2iikn1pglax8 --delete
+      - echo "Invalidating CloudFront cache"
+      - aws cloudfront create-invalidation --distribution-id E3U3BVWJL5WHRH --paths "/*"
 artifacts:
   files:
     - '**/*'
-  base-directory: frontend/auth-app/build #test
+  base-directory: frontend/auth-app/build
