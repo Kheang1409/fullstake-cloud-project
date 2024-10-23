@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - cd frontend/auth-app
-      - npm install
+      - npm clean-install
   build:
     commands:
       - npm run build  
