@@ -115,7 +115,7 @@ button:hover {
 }
 
 .success {
-  color: blue;
+  color: green;
   font-size: 0.9em;
   margin: 10px 0;
 }
@@ -131,7 +131,8 @@ p {
 p button {
   background: none;
   border: none;
-  color: #573b8a;
+  /* color: #573b8a; */
+  color: blue;
   font-weight: bold;
   cursor: pointer;
   transition: color 0.3s ease;
