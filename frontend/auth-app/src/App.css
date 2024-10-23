@@ -131,7 +131,6 @@ p {
 p button {
   background: none;
   border: none;
-  /* color: #573b8a; */
   color: black;
   font-weight: bold;
   cursor: pointer;
