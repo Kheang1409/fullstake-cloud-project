@@ -11,9 +11,9 @@ phases:
   post_build:
     commands:
       - echo "Deploying to S3"
-      - aws s3 sync build/ s3://cloud-kinfra-reactappbucket-2iikn1pglax8 --delete
+      - aws s3 sync build/ s3://cloud-kinfra-reactappbucket-uvkckmcddrtg --delete
       - echo "Invalidating CloudFront cache"
-      - aws cloudfront create-invalidation --distribution-id E3U3BVWJL5WHRH --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id E2ABS3RG0V1T5B --paths "/*"
 artifacts:
   files:
     - '**/*'
