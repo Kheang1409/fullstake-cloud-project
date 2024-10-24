@@ -73,7 +73,7 @@ const Login = ({ setIsAuthenticated }) => {
                 <p className="signup-link">
                     Don't have an account?{' '}
                     <button type="button" onClick={() => navigate('/signup')}>
-                        Sign Up
+                        Register
                     </button>
                 </p>
             </form>
